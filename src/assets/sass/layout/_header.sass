@@ -1,0 +1,32 @@
+.header
+    color: $color-white
+    padding: 3rem 20rem
+
+    &__container, &__nav
+        text-transform: uppercase
+    &__nav
+        display: flex
+        justify-content: space-between
+        &-link 
+            font-family: "OpenSans_Condensed-Bold"
+            display: inline-block
+            margin-right: 2rem
+            line-height: 1.5
+            text-decoration: none /* Убираем подчеркивание */
+            cursor: pointer
+            &::after 
+                background-color: $color-gold /* Цвет линии при наведении на нее курсора мыши */
+                display: block
+                content: ""
+                height: 2px /* Высота линии */
+                width: 0%
+                -webkit-transition: width .3s ease-in-out
+                -moz--transition: width .3s ease-in-out
+                transition: width .3s ease-in-out
+            &:hover:after,
+            &:focus:after 
+                width: 100%
+
+
+.phone
+    cursor: pointer

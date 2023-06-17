@@ -1,0 +1,42 @@
+.panel
+    width: 15rem
+    position: absolute
+    background: rgba(51, 51, 51, 0.75)
+    padding: 16rem 6.2rem
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        color: $color-grey
+        p
+            text-transform: uppercase
+            word-spacing: 4rem
+            writing-mode: vertical-rl
+            transform: rotate(180deg)
+    &__social img
+        width: 2.5rem
+        height: 2.5rem
+        cursor: pointer
+    &__social img:hover
+        fill: #000
+
+.inst div, .fb div, .vk div, .yb div
+    height: 26px
+    width: 26px
+    background-color: $color-white
+    mask-image: url("/assets/img/i.svg")
+    
+    &:hover
+        background-color: $color-gold
+
+
+.fb div
+    mask-image: url("/assets/img/fb.svg")
+    width: 15px
+.vk div
+    mask-image: url("/assets/img/vk.svg")
+    height: 14px
+
+.yb div
+    mask-image: url("/assets/img/yb.svg")
+    height: 18px
